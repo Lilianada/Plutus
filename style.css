@@ -1,0 +1,530 @@
+/*========================================*/
+/*------------ [Google_Font] -----------*/
+/*========================================*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600&family=Roboto:wght@500;700&display=swap');
+
+/*========================================*/
+/*------------ [_Root] bde0feff-------FFC368----*/
+/*========================================*/
+:root {
+
+    /* Colors */
+    --white-color: #FFFFFF;
+    --black-color: #111111;
+    --purple-color: #A566EB;
+    --gradient-color: linear-gradient(269deg, rgba(17,17,17,1) 0%, rgba(45,45,45,1) 100%);
+    --blue-color: #5eb2ef;
+    --skyBlue-color: #0088CC;
+    --darkBlue-color: #45629F;
+    --green-color: #075E54;
+
+
+    /* FontStyle*/
+    --fontOne: 'Roboto Mono', monospace;
+    --fontTwo: 'Roboto', sans-serif;
+    
+
+    /* Font Sizes */
+    --font-thirtySix: 2rem;
+    --font-twentyEight: 1.5rem;
+    --font-twentyFour: 1.375rem;
+    --font-eighteen: 1.125rem;
+    --font-sixteen: .8725rem;
+    --font-fourteen: .88rem;
+    --font-twelve: .75rem;
+}
+
+@media screen and (min-width:900px) {
+    :root {
+        --font-thirtySix: 2.25rem;
+        --font-twentyEight: 1.75rem;
+        --font-twentyFour: 1.5rem;
+        --font-eighteen: 1.25rem;
+        --font-sixteen: 1rem;
+        --font-fourteen: .88rem;
+        --font-twelve: .75rem;
+    }
+}
+
+/*========================================*/
+/*------------ [_Reset_Styles] -----------*/
+/*========================================*/
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/*========================================*/
+/*--------------- [_Buttons] -------------*/
+/*========================================*/
+/*Btn Style Max*/
+.btn{
+    display: inline-block;
+    background: transparent;
+    color: var(--purple-color);
+    padding: 0 1.25rem;
+    font-size: var(--font-thirteen);
+    font-weight: 700;
+    line-height: 2.5rem;
+    letter-spacing: 1px;
+    transition: .3s;
+    outline: 0;
+    box-shadow: 0 2px 4px rgb(0, 0, 0, .1);
+    border: 2px solid var(--purple-color);
+    border-radius: 5px;
+    appearance:none;
+    -webkit-appearance:none;
+    cursor: pointer;
+}
+
+.bd_white{
+    color: var(--white-color);
+    border: 2px solid var(--white-color);
+}
+
+.btn:hover, .btn:focus {
+    box-shadow: 7px 2px 9px rgba(167, 98, 167, 0.329);
+}
+
+/*========================================*/
+/*--------------- [_Utility] -------------*/
+/*========================================*/
+body {
+    max-width: 1440px;
+    height: 100vh;
+    background: var(--gradient-color);
+    font-family: var(--fontOne);
+    letter-spacing: 1px;
+}
+
+p, h1, h2, h3,
+h4, h5, h6{
+    padding: 0;
+    margin: 0;
+}
+
+h2, h3,
+h4, h5, h6 {
+    color: var(--head-pri-color);
+}
+
+p {
+    font-size: var(--font-sixteen);
+    line-height: 1.5rem;
+    color: var(--text-pri-color);
+}
+
+h1 {
+    font-size: var(--font-thirtySix);
+    font-family: var(--fontTwo);
+    line-height: 3rem;
+    font-weight: 700;
+    letter-spacing:-1px;
+}
+
+h2 {
+    font-size: var(--font-twentyEight);
+    line-height: 2.3rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: var(--font-eighteen);
+    line-height: 2rem;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: var(--font-sixteen);
+    line-height: 1.5rem;
+    font-weight: 500;
+}
+
+h5 {
+    font-size: var(--font-twelve);
+    font-weight: 500;
+}
+
+h6 {
+    font-size: var(--font-eleven);
+    line-height: 1.5rem;
+    font-weight: 400;
+}
+
+span{
+    color: var(--purple-color);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-family: var(--fontOne);
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    border: none;
+    max-width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+
+/*========================================*/
+/*--------------- [Body Wrapper] -------------*/
+
+/*========================================*/
+/*--------------- [_Header] -------------*/
+/*========================================*/
+.navigation{
+    height: 6rem;
+}
+
+.nav_header{
+    background: var(--black-color);
+    display: flex;
+    padding: 1rem 2rem;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+    position: relative;
+}
+
+.desktop_display{
+    display: none;
+}
+
+.mobile_menu{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    padding-top: 4.5rem;
+    z-index: 1;
+    font-size: var(--font-sixteen);
+    transform: translate(-100%);
+    transition: .5s;
+    justify-content: space-between;
+    color: var(--white-color);
+    background: var(--gradient-color);
+}
+
+.active{
+    transform: translate(0);
+}
+
+.mobile_logo{
+    color: var(--white-color);
+}
+
+#navToggle{
+    cursor: pointer;
+}
+
+.bar{
+    width: 30px;
+    height: 3px;
+    margin: 4px;
+    border-radius: 5px;
+    background: var(--white-color);
+    transition: .4s;
+}
+
+.change .bar{
+    display: block;
+    background: var(--purple-color);
+}
+
+.change .bOne{ 
+    transform: translateY(5px) rotate(45deg);
+}
+
+.change .bTwo{
+    opacity: 0;
+}
+
+.change .bThree{
+    transform: translateY(-8.75px) rotate(-45deg);
+}
+
+.mobile_display .nav_items{
+    margin: 2rem 2rem 0;
+}
+
+.nav_list{
+    padding: 1.2rem 0;
+    font-weight: 500;
+}
+
+.nav_link{
+    text-transform: uppercase;
+    color: var(--white-color);
+    font-weight: 600;
+}
+
+.mobile_display .nav_link:hover, .mobile_display .nav_link:focus{
+    color: var(--purple-color);
+}
+
+.nav_footer{
+    margin: 1rem 2rem 2rem;
+}
+
+.navsocial_links{
+    display: flex;
+    font-size: var(--font-fourteen);
+    justify-content: space-between;
+    width: 100%;
+}
+
+.social_link:hover{
+    color: var(--purple-color);
+}
+
+.copyright_white p{
+    font-size: var(--font-twelve);
+    color: var(--white-color);
+    margin-top: 1rem;
+}
+
+@media screen and (min-width: 500px) {
+    .navsocial_links{
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .mobile_display{
+        display: none; 
+    }
+
+    .desktop_display{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* position: absolute;
+        z-index: 1; */
+        padding: 2rem 2rem;
+        width: 100%;
+    }
+
+    .nav_items{
+        display: flex;
+        align-items: center;
+    }
+
+    .nav_list{
+        padding: 0 2rem;
+    }
+
+    .nav_link{
+        font-size: var(--font-sixteen);
+    }
+
+    .desktop_display .nav_link:hover, .desktop_display .nav_link:focus{
+        color: var(--purple-color);
+    }
+
+    .nav_right{
+        font-weight: 500;
+    }
+
+    .navsocial_links{
+        width: 80%;
+    }
+
+}
+
+/*========================================*/
+/*--------------- [Hero] -------------*/
+/*========================================*/
+.hero_section{
+    height: 100%;
+}
+
+.flex_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.flex_left{
+    background: url(assets/Top-Pattern.svg);
+    padding: 2rem;
+}
+
+.flex_left {width: 90%;} 
+
+.flex_right {width: 80%;}
+
+.flex_left h2, .flex_left h4{
+    color: var(--white-color);
+    font-family: var(--fontOne);
+}
+
+.flex_left h1 span{
+    /* color: var(--purple-color); */
+    font-family: var(--fontTwo);
+}
+
+.flex_left h4{
+    margin-top: 2rem;
+}
+
+.flex_left .btn{
+    margin-right: 1rem;
+    margin-top: 1rem;
+}
+
+.flex_right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.social_icons img {
+    padding: 1rem;
+}
+
+
+@media screen and (min-width: 900px) {
+    .flex_container{
+        justify-content: space-between;
+    }
+
+    .flex_left{
+        width: 55%;
+        height: 70vh;
+        padding: 5rem 2rem 2rem;
+        padding-left: 10rem;
+    }
+
+    .flex_right{
+        width: 45%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}
+
+/*========================================*/
+/*--------------- [Pricing] -------------*/
+/*========================================*/
+.pricing_section{
+    margin: 2rem;
+}
+
+.pricing_wrapper{
+    background: url(assets/Pricing-Pattern.svg);
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.pricing_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricing_card{
+    padding: 1.5rem 2rem;
+    background: var(--black-color);
+    color: var(--white-color);
+    margin: 1rem;
+    width: 350px;
+    text-align: center;
+    box-shadow: 5px -5px 5px rgba(109, 109, 109, 0.178);
+}
+
+.pricing_card .btn{
+    width: 100%;
+}
+
+/*========================================*/
+/*--------------- [About Us] -------------*/
+/*========================================*/
+.about_section{
+    margin: 2rem 0;
+}
+
+.about_container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about_right{
+    color: var(--white-color);
+    background: url(assets/About-Us-Pattern.svg);
+    padding: 2rem;
+}
+
+.about_left{
+    padding: 2rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_card{
+    width: 300px;
+    background: var(--black-color);
+    color: var(--white-color);
+    padding: 1rem;
+    margin: 1rem;
+    /* position: absolute; */
+}
+
+.about_card h3{
+    text-align: center;
+}
+
+.about_card img{
+    margin: 0 6rem;
+}
+
+@media screen and (min-width: 900px) {
+    .about_left{
+        width: 55%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .about_card {
+        position: relative;
+        width: 290px;
+    }
+
+    .fast, .telegram{
+        margin: 4rem 2rem 4rem 1rem;
+    }
+
+    .crypto, .nft{
+        margin: 4rem 1rem 4rem 2rem;
+    }
+
+    .secure{
+        position: absolute;
+        z-index: 1;
+    }
+
+    .about_right{width: 45%;}
+}
