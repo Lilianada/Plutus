@@ -98,7 +98,7 @@ html {
 /*--------------- [_Utility] -------------*/
 /*========================================*/
 body {
-    max-width: 1440px;
+    width: 100vw;
     height: 100vh;
     background: var(--gradient-color);
     color: var(--white-color);
@@ -184,7 +184,10 @@ img {
 
 /*========================================*/
 /*--------------- [Body Wrapper] -------------*/
-
+.body_container{
+    max-width: 1960px;
+    margin: 0 auto;
+}
 /*========================================*/
 /*--------------- [_Header] -------------*/
 /*========================================*/
@@ -307,7 +310,7 @@ img {
 
     .desktop_display{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;
         padding: 2rem 2rem;
         width: 100%;
@@ -526,6 +529,13 @@ img {
     .about_right{
         width: 40%;
     }
+}
+
+@media screen and (min-width: 1440px) {
+    .about_card {
+        width: 300px;
+    }
+
 }
 
 /*========================================*/
