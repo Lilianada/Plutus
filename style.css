@@ -101,6 +101,7 @@ body {
     max-width: 1440px;
     height: 100vh;
     background: var(--gradient-color);
+    color: var(--white-color);
     font-family: var(--fontOne);
     letter-spacing: 1px;
 }
@@ -218,16 +219,11 @@ img {
     transform: translate(-100%);
     transition: .5s;
     justify-content: space-between;
-    color: var(--white-color);
     background: var(--gradient-color);
 }
 
 .active{
     transform: translate(0);
-}
-
-.mobile_logo{
-    color: var(--white-color);
 }
 
 #navToggle{
@@ -248,15 +244,15 @@ img {
     background: var(--purple-color);
 }
 
-.change .bOne{ 
+.change .b_one{ 
     transform: translateY(5px) rotate(45deg);
 }
 
-.change .bTwo{
+.change .b_two{
     opacity: 0;
 }
 
-.change .bThree{
+.change .b_three{
     transform: translateY(-8.75px) rotate(-45deg);
 }
 
@@ -271,7 +267,6 @@ img {
 
 .nav_link{
     text-transform: uppercase;
-    color: var(--white-color);
     font-weight: 600;
 }
 
@@ -296,7 +291,6 @@ img {
 
 .copyright_white p{
     font-size: var(--font-twelve);
-    color: var(--white-color);
     margin-top: 1rem;
 }
 
@@ -315,8 +309,6 @@ img {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        /* position: absolute;
-        z-index: 1; */
         padding: 2rem 2rem;
         width: 100%;
     }
@@ -370,15 +362,12 @@ img {
 
 .flex_left {width: 90%;} 
 
-.flex_right {width: 80%;}
 
 .flex_left h2, .flex_left h4{
-    color: var(--white-color);
     font-family: var(--fontOne);
 }
 
 .flex_left h1 span{
-    /* color: var(--purple-color); */
     font-family: var(--fontTwo);
 }
 
@@ -392,9 +381,10 @@ img {
 }
 
 .flex_right{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    width: 80%;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 80% 20%;
     justify-content: space-evenly;
 }
 
@@ -417,6 +407,7 @@ img {
 
     .flex_right{
         width: 45%;
+        display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
@@ -426,14 +417,12 @@ img {
 /*========================================*/
 /*--------------- [Pricing] -------------*/
 /*========================================*/
-.pricing_section{
-    margin: 2rem;
-}
 
 .pricing_wrapper{
     background: url(assets/Pricing-Pattern.svg);
+    object-fit: cover;
     text-align: center;
-    padding: 4rem 0;
+    padding: 4rem 2rem;
 }
 
 .pricing_container{
@@ -446,7 +435,6 @@ img {
 .pricing_card{
     padding: 1.5rem 2rem;
     background: var(--black-color);
-    color: var(--white-color);
     margin: 1rem;
     width: 350px;
     text-align: center;
@@ -461,18 +449,21 @@ img {
 /*--------------- [About Us] -------------*/
 /*========================================*/
 .about_section{
-    margin: 2rem 0;
+    margin: 3rem 0;
 }
 
 .about_container{
     display: flex;
+    flex-direction: column-reverse;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .about_right{
-    color: var(--white-color);
     background: url(assets/About-Us-Pattern.svg);
+    object-fit: cover;
     padding: 2rem;
+    height: min-content;
 }
 
 .about_left{
@@ -487,10 +478,9 @@ img {
 .about_card{
     width: 300px;
     background: var(--black-color);
-    color: var(--white-color);
     padding: 1rem;
     margin: 1rem;
-    /* position: absolute; */
+    box-shadow: 5px -5px 5px rgba(109, 109, 109, 0.178);
 }
 
 .about_card h3{
@@ -498,23 +488,30 @@ img {
 }
 
 .about_card img{
-    margin: 0 6rem;
+    display: grid;
+    margin: 0 auto;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1024px) {
+    .about_container{
+        flex-direction: row;
+    }
+
     .about_left{
-        width: 55%;
+        width: 60%;
         display: flex;
         flex-wrap: wrap;
+        padding: 0%;
     }
 
     .about_card {
         position: relative;
-        width: 290px;
+        width: 245px;
+        padding: 1rem;
     }
 
     .fast, .telegram{
-        margin: 4rem 2rem 4rem 1rem;
+        margin: 4rem 2rem 4rem 2rem;
     }
 
     .crypto, .nft{
@@ -526,5 +523,34 @@ img {
         z-index: 1;
     }
 
-    .about_right{width: 45%;}
+    .about_right{
+        width: 40%;
+    }
+}
+
+/*========================================*/
+/*--------------- [Footer Section] -------------*/
+/*========================================*/
+.footer_wrapper{
+    background: url(assets/About-Us-Pattern.svg);
+    object-fit: cover;
+    padding: 2rem ;
+}
+.footer_connect{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_copyright {
+    margin-top: 1rem;
+}
+
+.footer_copyright p{
+    text-transform: uppercase;
+}
+
+.footer_icons{
+    margin-top: .5rem;
 }
