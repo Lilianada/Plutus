@@ -605,7 +605,8 @@ img {
 .registration{
     display: flex;
     flex-direction: column;
-    height: 90vh;
+    justify-content: space-evenly;
+    height: 85vh;
     width: 80vw;
     background: var(--black-color);
     margin: 2rem auto;
@@ -755,10 +756,10 @@ form{
 }
 
 @media screen and (min-width: 768px) {
-    #register_section{
+    /* #register_section{
         height: 80vh;
         width: 60vw;
-    }
+    } */
 }
 
 
@@ -766,7 +767,7 @@ form{
 /*--------------- [Reset Section] -------------*/
 /*========================================*/
 .reset_section{
-    height: 60vh;
+    height: 50vh;
     width: 70vw;
 }
 
@@ -804,8 +805,22 @@ form{
 
 @media screen and (min-width: 768px) {
     .reset_section{
-        height: 55vh;
-        width: 50vw;
+        height: 60vh;
+        width: 40vw;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .reset_section{
+        height: 50vh;
+        width: 30vw;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .reset_section{
+        height: 30vh;
+        width: 30vw;
     }
 }
 
