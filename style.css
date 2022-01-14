@@ -29,7 +29,7 @@
     --font-twentyEight: 1.5rem;
     --font-twentyFour: 1.375rem;
     --font-eighteen: 1.125rem;
-    --font-sixteen: .8725rem;
+    --font-sixteen: .875rem;
     --font-fourteen: .88rem;
     --font-twelve: .75rem;
 }
@@ -185,7 +185,7 @@ img {
 /*========================================*/
 /*--------------- [Body Wrapper] -------------*/
 .body_container{
-    max-width: 1960px;
+    max-width: 2560px;
     margin: 0 auto;
 }
 /*========================================*/
@@ -195,14 +195,19 @@ img {
     height: 6rem;
 }
 
+
 .nav_header{
-    background: var(--black-color);
     display: flex;
+    background: var(--black-color);
     padding: 1rem 2rem;
     align-items: center;
-    justify-content: space-between;
-    z-index: 2;
+    justify-content: space-evenly;
+    z-index: 3;
     position: relative;
+}
+
+.mobile_logo{
+    margin: 0 auto;
 }
 
 .desktop_display{
@@ -275,6 +280,7 @@ img {
 
 .mobile_display .nav_link:hover, .mobile_display .nav_link:focus{
     color: var(--purple-color);
+    border-bottom: var(--purple-color) 2px solid;
 }
 
 .nav_footer{
@@ -310,6 +316,7 @@ img {
 
     .desktop_display{
         display: flex;
+        background: var(--black-color);
         justify-content: space-evenly;
         align-items: center;
         padding: 2rem 2rem;
@@ -348,6 +355,7 @@ img {
 /*========================================*/
 .hero_section{
     height: 100%;
+    margin-bottom: 0 0 2rem;
 }
 
 .flex_container{
@@ -360,10 +368,15 @@ img {
 
 .flex_left{
     background: url(assets/Top-Pattern.svg);
-    padding: 2rem;
 }
 
-.flex_left {width: 90%;} 
+.flex_text{
+    margin: 2rem;
+}
+
+.flex_left {
+    width: 90%;
+} 
 
 
 .flex_left h2, .flex_left h4{
@@ -403,7 +416,7 @@ img {
 
     .flex_left{
         width: 55%;
-        height: 70vh;
+        height: 100%;
         padding: 5rem 2rem 2rem;
         padding-left: 10rem;
     }
@@ -420,6 +433,9 @@ img {
 /*========================================*/
 /*--------------- [Pricing] -------------*/
 /*========================================*/
+.pricing_section{
+    margin: 3rem 0;
+}
 
 .pricing_wrapper{
     background: url(assets/Pricing-Pattern.svg);
@@ -534,8 +550,21 @@ img {
 @media screen and (min-width: 1440px) {
     .about_card {
         width: 300px;
+        padding: 2rem;
     }
 
+}
+
+@media screen and (min-width: 1780px) {
+    .about_card {
+        width: 350px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .about_card {
+        width: 470px;
+    }
 }
 
 /*========================================*/
