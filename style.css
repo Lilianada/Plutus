@@ -576,7 +576,7 @@ img {
 /*========================================*/
 .footer_wrapper{
     background: url(assets/About-Us-Pattern.svg);
-    object-fit: cover;
+    background-size: cover;
     padding: 2rem ;
 }
 .footer_connect{
@@ -597,3 +597,251 @@ img {
 .footer_icons{
     margin-top: .5rem;
 }
+
+
+/*========================================*/
+/*--------------- [Login Section] -------------*/
+/*========================================*/
+.registration{
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    width: 80vw;
+    background: var(--black-color);
+    margin: 2rem auto;
+    padding: 2rem;
+    border: 3px solid ;
+    border-radius: 10px;
+}
+
+#login_section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabs{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    justify-content: space-between;
+}
+
+@media screen and (min-width: 400px) {
+    .tabs{
+        justify-content: space-evenly;
+    }
+}
+
+.login:hover,.login:focus, .register:hover, .register:focus{
+    color: var(--purple-color);
+    border-bottom: 1px solid var(--purple-color);
+}
+
+form{
+ display: flex;
+ width: 100%;
+ flex-direction: column;
+ align-items: center;
+}
+
+.login_input{
+    width: 80%;
+    background: none;
+    border: none;
+    border-bottom: 2px solid grey;
+    padding: 1rem 0;
+    outline: none;
+    color: var(--white-color);
+    margin: 1rem 0;
+}
+
+.login_input::placeholder{
+    font-size: 16px;
+    padding: 1rem;
+}
+
+.forget_pass{
+    margin: 1rem 0;
+    border-bottom: 1px solid var(--white-color);
+}
+
+.forget_pass:hover{
+    color: var(--purple-color);
+    border-bottom: 1px solid var(--purple-color);
+}
+
+#login_section .btn, #register_section .btn{
+    width: 70%;
+    padding: .35rem;
+    margin-top: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    #login_section .btn, #register_section .btn{
+        width: 60%;
+    }
+
+    .registration{
+        height: 80vh;
+        width: 50vw;
+    }
+}
+
+/*========================================*/
+/*--------------- [Register Section] -------------*/
+/*========================================*/
+#register_section{
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+
+.check_box{
+    display: inline;
+    width: 80%;
+    margin-bottom: 1rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.checkbox[type="checkbox"] {
+    visibility: hidden;
+}
+
+.check {
+    position: absolute;
+    top: 5px;
+    left: 0px;
+    height: 15px;
+    width: 15px;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    padding: 0 3px 3px 4px;
+    background-color: transparent;
+  }
+
+.check_box .checkbox:checked ~ .check {
+    background-color: #2196F3;
+}
+  
+.check:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+.check_box .checkbox:checked ~ .check:after {
+    display: block;
+}
+
+.check_box .check:after{
+    width: 5px;
+    height: 10px;
+    border: solid var(--white-color);
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(95deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.privacy{
+    border-bottom: 1px solid var(--white-color);
+}
+
+@media screen and (min-width: 768px) {
+    #register_section{
+        height: 80vh;
+        width: 60vw;
+    }
+}
+
+
+/*========================================*/
+/*--------------- [Reset Section] -------------*/
+/*========================================*/
+.reset_section{
+    height: 60vh;
+    width: 70vw;
+}
+
+.tab_head{
+    margin: 0 auto;
+}
+
+.reset_password {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.reset_password .btn{
+    margin: 1rem auto;
+    width: 70%;
+    padding: .35rem;
+    text-align: center;
+}
+
+.reset_password .login_input{
+    width: 100%;
+}
+
+.back_btn{
+    display: flex;
+    align-items: center;
+    margin: 1rem 0 0;
+}
+
+.back_btn img{
+    margin-right: .75rem;
+}
+
+@media screen and (min-width: 768px) {
+    .reset_section{
+        height: 55vh;
+        width: 50vw;
+    }
+}
+
+/*========================================*/
+/*--------------- [New Password Section] -------------*/
+/*========================================*/
+.newpass_section{
+    height: 75vh;
+    width: 70vw;
+}
+
+
+@media screen and (min-width: 768px) {
+    .newpass_section{
+        height: 65vh;
+        width: 50vw;
+    }
+}
+
+
+/*========================================*/
+/*--------------- [Passcode Section] -------------*/
+/*========================================*/
+.passcode_section{
+    height: 70vh;
+    width: 70vw;
+}
+
+.tabsub_head{
+    margin: 1rem auto;
+}
+
+@media screen and (min-width: 768px) {
+    .passcode_section{
+        height: 65vh;
+        width: 50vw;
+    }
+}
+

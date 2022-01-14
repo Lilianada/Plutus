@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Plutus</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel= "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <!-- <a href="https://icons8.com/icon/3552/bitcoin">Bitcoin icon by Icons8</a> -->
+</head>
+
+<body>
+    <div class="body_container">
+        <header-component></header-component>
+
+      
+                 <!--------------Login section----------->
+            <section class="registration">
+                <div class="tabs">
+                    <a href="#" class="tab_menu login"><h3>Login</h3></a>
+                    <a href="#" class="tab_menu register"><h3>Register</h3></a>
+                </div>
+                <div class="tabs_content">
+                    <div id="login_section">
+                        <form action="submit">
+                            <input type="email" placeholder="Email or Username" class="login_input">
+                            <input type="email" placeholder="Password" class="login_input">
+                        </form>
+                        <a href="resetPassword.html" class="forget_pass">Forget Your Password?</a>
+                        <button type="submit" class="btn">Submit</button>
+                    </div>
+
+                    <div id="register_section">
+                        <form action="submit">
+                            <input type="text" placeholder="Username" class="login_input">
+                            <input type="email" placeholder="Email" class="login_input">
+                            <input type="email" placeholder="Password" class="login_input">
+                            <label class="check_box">
+                                <input type="checkbox" name="" class="checkbox">
+                                <span class="check"></span>
+                                By Clicking This You Agree To Our <a href="#" class="privacy">Privacy Policy</a>
+                            </label>
+                        </form>
+                        <button type="submit" class="btn">Submit</button>
+                    </div>
+                </div>
+                
+            </section>
+
+
+       <!--------------Footer Section----------->
+       <footer-component></footer-component>
+    </div>
+   <script src="script.js"></script>
+</body>
+</html>
