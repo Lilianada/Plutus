@@ -323,6 +323,10 @@ img {
         width: 100%;
     }
 
+    .mobile_logo{
+        margin: 0%;
+    }
+
     .nav_items{
         display: flex;
         align-items: center;
