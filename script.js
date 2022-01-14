@@ -20,8 +20,8 @@ class Header extends HTMLElement {
                         <li class="nav_list"><a href="#" class="nav_link">Pricing</a></li>
                         <li class="nav_list"><a href="#" class="nav_link">About Us</a></li>
                         <li class="nav_list"><a href="#" class="nav_link">Support</a></li>
-                        <li class="nav_list"><a href="#" class="nav_link">Login</a></li>
-                        <li class="nav_list"><a href="register.html" class="btn">Register</a></li>
+                        <li class="nav_list"><a href="login.html" class="nav_link">Login</a></li>
+                        <li class="nav_list"><a href="login.html" class="btn">Register</a></li>
                     </ul>
                     <div class="nav_footer">
                         <div class="navsocial_links">
@@ -44,8 +44,8 @@ class Header extends HTMLElement {
                     <li class="nav_list"><a href="#" class="nav_link">Pricing</a></li>
                     <li class="nav_list"><a href="#" class="nav_link">About Us</a></li>
                     <li class="nav_list"><a href="#" class="nav_link">Support</a></li>
-                    <li class="nav_list"><a href="#" class="nav_link">Login</a></li>
-                    <li class="nav_list"><a href="register.html" class="btn">Register</a></li>
+                    <li class="nav_list"><a href="login.html" class="nav_link">Login</a></li>
+                    <li class="nav_list"><a href="login.html" class="btn">Register</a></li>
                 </ul>
             </div>
         </header>
@@ -109,52 +109,4 @@ tabMenu.forEach(e => {
        
     })
 })
-
-
-
-
-
-// i = tab.length;
-
-// if (i < 1){
-//     tab.addEventListener('click', () => {
-//         tabLogin.classList.onclick('display')
-//     })
-
-//    }else if (i = 1){
-//        tab.addEventListener('click',() => {
-//            tabRegister.classList.onclick('display')
-//            tabLogin.style.display = "none"
-//        });
-//    }
-
-// console.log(tab)
-
-// const links = document.getElementsByTagName('a');
-// 	for (const i in links) {
-// 		// In embedded preview, all link clicks must be checked to see if the target page can be injected with this file's script.
-// 		links[i].onclick = (e) => handleLinkClick(e.target.href);
-// 		links[i].onmouseenter = (e) => handleLinkHoverStart(e.target.href);
-// 		links[i].onmouseleave = handleLinkHoverEnd;
-// 	}
-
-// tab.addEventListener('click', () => {
-//     for(let i = 0; i < tabMenu.length; i++) {
-//         if (i = 0 ){
-//             tabLogin.style.display = "flex";
-//         }else if (i = 1){
-//             tabRegister.style.display = "flex";
-//             tabLogin.style.display = "none";
-//         }
-//     }
-// })
-
-// if (i < 1){
-//  tab.addEventListener('click', () =>{
-//     tabLogin.style.display = "block"
-//  })
-// }else if (i = 1){
-//     tabLogin.style.display = "none";
-//     tabRegister.style.display = "block"
-// }
 
