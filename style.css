@@ -604,14 +604,23 @@ img {
 
 
 /*========================================*/
-/*--------------- [Login Section] -------------*/
+/*--------------- [Login and Register Section] -------------*/
 /*========================================*/
+.flex_login{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+}
+
 .registration{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 85vh;
-    width: 90vw;
+    height: 500px;
+    width: 280px;
     background: var(--black-color);
     margin: 2rem auto;
     padding: 2rem;
@@ -619,6 +628,7 @@ img {
     border-radius: 10px;
 }
 
+/*--------------- [Login Section] -------------*/
 #login_section{
     width: 100%;
     display: flex;
@@ -638,6 +648,10 @@ img {
 @media screen and (min-width: 400px) {
     .tabs{
         justify-content: space-evenly;
+    }
+
+    .registration{
+        width: 350px;
     }
 }
 
@@ -662,13 +676,14 @@ form{
     border-bottom: 2px solid grey;
     padding: 1rem 0;
     outline: none;
+    font-size: var(--font- );
     color: var(--white-color);
     margin: 1rem 0;
 }
 
 .login_input::placeholder{
     font-size: 16px;
-    padding: 1rem;
+    /* padding: 1rem; */
 }
 
 .forget_pass{
@@ -687,14 +702,18 @@ form{
     margin-top: 1rem;
 }
 
+
 @media screen and (min-width: 768px) {
     #login_section .btn, #register_section .btn{
         width: 60%;
     }
 
     .registration{
-        height: 80vh;
-        width: 50vw;
+        width: 550px;
+    }
+
+    .login_img{
+        width: 45%;
     }
 }
 
@@ -761,15 +780,12 @@ form{
     border-bottom: 1px solid var(--white-color);
 }
 
-
-
-
 /*========================================*/
 /*--------------- [Reset Section] -------------*/
 /*========================================*/
 .reset_section{
-    height: 65vh;
-    width: 85vw;
+    height: 350px;
+    width: 280px;
 }
 
 .tab_head{
@@ -801,59 +817,38 @@ form{
 }
 
 .back_btn img{
-    margin-right: .75rem;
+    margin-right: .5rem;
 }
 
 @media screen and (min-width: 768px) {
     .reset_section{
-        height: 60vh;
-        width: 40vw;
+        width: 350px;
     }
 }
 
-@media screen and (min-width: 1440px) {
-    .reset_section{
-        height: 50vh;
-        width: 30vw;
-    }
-}
-
-@media screen and (min-width: 1800px) {
-    .reset_section{
-        height: 30vh;
-        width: 30vw;
-    }
-}
 
 /*========================================*/
 /*--------------- [New Password Section] -------------*/
 /*========================================*/
 .newpass_section{
-    height: 80vh;
-    width: 90vw;
+    height: 400px;
+    width: 280px;
 }
 
 
 @media screen and (min-width: 768px) {
     .newpass_section{
-        height: 80vh;
-        width: 35vw;
+        width: 350px;
     }
 }
 
-@media screen and (min-width: 1440px) {
-    .newpass_section{
-        height: 50vh;
-        width: 30vw;
-    }
-}
 
 /*========================================*/
 /*--------------- [Passcode Section] -------------*/
 /*========================================*/
 .passcode_section{
-    height: 70vh;
-    width: 90vw;
+    height: 400px;
+    width: 280px;
 }
 
 .tabsub_head{
@@ -862,8 +857,7 @@ form{
 
 @media screen and (min-width: 768px) {
     .passcode_section{
-        height: 65vh;
-        width: 50vw;
+        width: 350px;
     }
 }
 
