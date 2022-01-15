@@ -187,6 +187,8 @@ img {
 .body_container{
     max-width: 2560px;
     margin: 0 auto;
+    overflow: hidden;
+    scroll-behavior: smooth;
 }
 /*========================================*/
 /*--------------- [_Header] -------------*/
@@ -289,6 +291,7 @@ img {
 
 .navsocial_links{
     display: flex;
+    flex-wrap: wrap;
     font-size: var(--font-fourteen);
     justify-content: space-between;
     width: 100%;
@@ -446,6 +449,7 @@ img {
     object-fit: cover;
     text-align: center;
     padding: 4rem 2rem;
+    overflow: hidden;
 }
 
 .pricing_container{
@@ -607,7 +611,7 @@ img {
     flex-direction: column;
     justify-content: space-evenly;
     height: 85vh;
-    width: 80vw;
+    width: 90vw;
     background: var(--black-color);
     margin: 2rem auto;
     padding: 2rem;
@@ -646,6 +650,8 @@ form{
  display: flex;
  width: 100%;
  flex-direction: column;
+ margin: 0 auto;
+ justify-content: center;
  align-items: center;
 }
 
@@ -755,20 +761,15 @@ form{
     border-bottom: 1px solid var(--white-color);
 }
 
-@media screen and (min-width: 768px) {
-    /* #register_section{
-        height: 80vh;
-        width: 60vw;
-    } */
-}
+
 
 
 /*========================================*/
 /*--------------- [Reset Section] -------------*/
 /*========================================*/
 .reset_section{
-    height: 50vh;
-    width: 70vw;
+    height: 65vh;
+    width: 85vw;
 }
 
 .tab_head{
@@ -828,25 +829,31 @@ form{
 /*--------------- [New Password Section] -------------*/
 /*========================================*/
 .newpass_section{
-    height: 75vh;
-    width: 70vw;
+    height: 80vh;
+    width: 90vw;
 }
 
 
 @media screen and (min-width: 768px) {
     .newpass_section{
-        height: 65vh;
-        width: 50vw;
+        height: 80vh;
+        width: 35vw;
     }
 }
 
+@media screen and (min-width: 1440px) {
+    .newpass_section{
+        height: 50vh;
+        width: 30vw;
+    }
+}
 
 /*========================================*/
 /*--------------- [Passcode Section] -------------*/
 /*========================================*/
 .passcode_section{
     height: 70vh;
-    width: 70vw;
+    width: 90vw;
 }
 
 .tabsub_head{
