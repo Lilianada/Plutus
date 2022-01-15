@@ -628,7 +628,7 @@ img {
     flex-direction: column;
     justify-content: space-evenly;
     height: 500px;
-    width: 280px;
+    width: 300px;
     background: var(--black-color);
     margin: 2rem auto;
     padding: 2rem;
@@ -792,7 +792,7 @@ form{
 /*========================================*/
 .reset_section{
     height: 350px;
-    width: 280px;
+    width: 300px;
     margin: 4rem auto;
 }
 
@@ -840,7 +840,7 @@ form{
 /*========================================*/
 .newpass_section{
     height: 400px;
-    width: 280px;
+    width: 300px;
 }
 
 
@@ -856,7 +856,7 @@ form{
 /*========================================*/
 .passcode_section{
     height: 400px;
-    width: 280px;
+    width: 300px;
 }
 
 .tabsub_head{
