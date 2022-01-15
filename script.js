@@ -25,10 +25,9 @@ class Header extends HTMLElement {
                     </ul>
                     <div class="nav_footer">
                         <div class="navsocial_links">
-                            <a href="#" class="social_link">LinkedIn</a>
-                            <a href="#" class="social_link">Instagram</a>
-                            <a href="#" class="social_link">Twitter</a>
-                            <a href="#" class="social_link">Facebook</a>
+                            <img src="https://img.icons8.com/ios-filled/24/ffffff/telegram-app.png"/>
+                            <img src="https://img.icons8.com/material-outlined/24/ffffff/facebook-f.png"/>
+                            <img src="https://img.icons8.com/ios-filled/24/ffffff/twitter.png"/>
                         </div>
                         <div class="copyright_white">
                             <p>&copy; Logo 2022 Plutus, All rights reserved.</p>
