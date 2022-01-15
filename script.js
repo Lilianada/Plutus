@@ -31,7 +31,7 @@ class Header extends HTMLElement {
                             <a href="#" class="social_link">Facebook</a>
                         </div>
                         <div class="copyright_white">
-                            <p>© Logo 2022 Plutus, All rights reserved.</p>
+                            <p>&copy; Logo 2022 Plutus, All rights reserved.</p>
                         </div>
                     </div>
                 </div>
@@ -72,7 +72,7 @@ class Footer extends HTMLElement{
                     </div>
                 </div>
                 <div class="footer_copyright">
-                    <p>© Logo 2022 Plutus, All rights reserved.</p>
+                    <p>&copy; Logo 2022 Plutus, All rights reserved.</p>
                 </div>
             </div>
         </footer>
