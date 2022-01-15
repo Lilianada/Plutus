@@ -99,7 +99,6 @@ html {
 /*========================================*/
 body {
     width: 100vw;
-    height: 100vh;
     background: var(--gradient-color);
     color: var(--white-color);
     font-family: var(--fontOne);
@@ -187,12 +186,14 @@ img {
 .body_container{
     max-width: 2560px;
     width: 100%;
+    height: 100%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto;
     overflow: hidden;
     scroll-behavior: smooth;
+    overflow-y: hidden;
 }
 /*========================================*/
 /*--------------- [_Header] -------------*/
@@ -287,7 +288,7 @@ img {
 
 .mobile_display .nav_link:hover, .mobile_display .nav_link:focus{
     color: var(--purple-color);
-    border-bottom: var(--purple-color) 2px solid;
+    text-decoration: underline;
 }
 
 .nav_footer{
@@ -615,9 +616,9 @@ img {
 /*========================================*/
 /*--------[Login and Register Section]-------*/
 /*=======================================*/
-.full_height{
+/* .full_height{
     height: 100%;
-}
+} */
 
 .flex_login{
     display: flex;
@@ -626,7 +627,6 @@ img {
     align-items: center;
     width: 100%;
     padding: 1rem;
-    overflow: hidden;
 }
 
 .registration{
@@ -671,7 +671,7 @@ img {
 
 .login:hover,.login:focus, .register:hover, .register:focus{
     color: var(--purple-color);
-    border-bottom: 1px solid var(--purple-color);
+    text-decoration: underline;
 }
 
 form{
@@ -702,7 +702,7 @@ form{
 
 .forget_pass{
     margin: 1rem 0;
-    border-bottom: 1px solid var(--white-color);
+    text-decoration: underline;
 }
 
 .forget_pass:hover{
