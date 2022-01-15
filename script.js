@@ -7,7 +7,7 @@ class Header extends HTMLElement {
         <header class="navigation">
             <div class="mobile_display">
                 <div class="nav_header">
-                    <a href="#" class="mobile_logo"><h1>Plutus</h1></a>
+                    <a href="index.html" class="mobile_logo"><h1>Plutus</h1></a>
                     <div id="navToggle">
                         <div class="bar b_one"></div>
                         <div class="bar b_two"></div>
@@ -16,7 +16,7 @@ class Header extends HTMLElement {
                 </div>
                 <div class="mobile_menu">
                     <ul class="nav_items">
-                        <li class="nav_list"><a href="#" class="nav_link">Home</a></li>
+                        <li class="nav_list"><a href="index.html" class="nav_link">Home</a></li>
                         <li class="nav_list"><a href="#" class="nav_link">Pricing</a></li>
                         <li class="nav_list"><a href="#" class="nav_link">About Us</a></li>
                         <li class="nav_list"><a href="#" class="nav_link">Support</a></li>
@@ -38,9 +38,9 @@ class Header extends HTMLElement {
             </div>
             
             <div class="desktop_display">
-                <a href="#" class="mobile_logo"><h1>Plutus</h1></a>
+                <a href="index.html" class="mobile_logo"><h1>Plutus</h1></a>
                 <ul class="nav_items">
-                    <li class="nav_list"><a href="#" class="nav_link">Home</a></li>
+                    <li class="nav_list"><a href="index.html" class="nav_link">Home</a></li>
                     <li class="nav_list"><a href="#" class="nav_link">Pricing</a></li>
                     <li class="nav_list"><a href="#" class="nav_link">About Us</a></li>
                     <li class="nav_list"><a href="#" class="nav_link">Support</a></li>

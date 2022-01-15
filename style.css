@@ -186,7 +186,11 @@ img {
 /*--------------- [Body Wrapper] -------------*/
 .body_container{
     max-width: 2560px;
+    width: 100%;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
     overflow: hidden;
     scroll-behavior: smooth;
 }
@@ -195,6 +199,7 @@ img {
 /*========================================*/
 .navigation{
     height: 6rem;
+    width: 100%;
 }
 
 
@@ -581,6 +586,10 @@ img {
 .footer_wrapper{
     background: url(assets/About-Us-Pattern.svg);
     background-size: cover;
+    width: 100%;
+    overflow: hidden;
+}
+.footer_wrapper{
     padding: 2rem ;
 }
 .footer_connect{
@@ -604,16 +613,20 @@ img {
 
 
 /*========================================*/
-/*--------------- [Login and Register Section] -------------*/
-/*========================================*/
+/*--------[Login and Register Section]-------*/
+/*=======================================*/
+.full_height{
+    height: 100%;
+}
+
 .flex_login{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     width: 100%;
-    max-height: 100vh;
     padding: 1rem;
+    overflow: hidden;
 }
 
 .registration{
