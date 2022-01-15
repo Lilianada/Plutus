@@ -684,7 +684,7 @@ form{
     background: none;
     border: none;
     border-bottom: 2px solid grey;
-    padding: 1rem 0;
+    padding: 1rem;
     outline: none;
     font-size: var(--font- );
     color: var(--white-color);
@@ -714,11 +714,11 @@ form{
 
 @media screen and (min-width: 768px) {
     #login_section .btn, #register_section .btn{
-        width: 60%;
+        width: 50%;
     }
 
     .registration{
-        width: 600px;
+        width: 650px;
     }
 
     .login_img{
@@ -832,7 +832,16 @@ form{
 
 @media screen and (min-width: 768px) {
     .reset_section{
-        width: 450px;
+        width: 650px;
+    }
+
+    .reset_password{    
+        padding: 0 3rem;
+    }
+
+    .reset_password .btn{
+        width: 50%;
+        margin: 2rem auto 1rem;
     }
 }
 
@@ -849,7 +858,7 @@ form{
 
 @media screen and (min-width: 768px) {
     .newpass_section{
-        width: 450px;
+        width: 650px;
     }
 }
 
@@ -869,7 +878,7 @@ form{
 
 @media screen and (min-width: 768px) {
     .passcode_section{
-        width: 450px;
+        width: 650px;
     }
 }
 
