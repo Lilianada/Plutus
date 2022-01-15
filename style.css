@@ -793,6 +793,7 @@ form{
 .reset_section{
     height: 350px;
     width: 280px;
+    margin: 4rem auto;
 }
 
 .tab_head{
