@@ -12,12 +12,11 @@
     --white-color: #FFFFFF;
     --black-color: #111111;
     --purple-color: #A566EB;
-    --gradient-color: linear-gradient(269deg, rgba(17,17,17,1) 0%, rgba(45,45,45,1) 100%);
+    --gradient-color: linear-gradient(to right top, #111111, #181818, #1f1f1f, #262626, #2d2d2d);
     --blue-color: #5eb2ef;
     --skyBlue-color: #0088CC;
     --darkBlue-color: #45629F;
     --green-color: #075E54;
-
 
     /* FontStyle*/
     --fontOne: 'Roboto Mono', monospace;
@@ -59,6 +58,7 @@
 
 html {
     scroll-behavior: smooth;
+
 }
 
 
@@ -91,14 +91,17 @@ html {
 }
 
 .btn:hover, .btn:focus {
-    box-shadow: 7px 2px 9px rgba(167, 98, 167, 0.329);
+    box-shadow: -3px -3px 29px -8px rgba(182,137,235,0.85);
+    -webkit-box-shadow: -3px -3px 29px -8px rgba(182,137,235,0.85);
+    -moz-box-shadow: -3px -3px 29px -8px rgba(182,137,235,0.85);
 }
 
 /*========================================*/
 /*--------------- [_Utility] -------------*/
 /*========================================*/
 body {
-    width: 100vw;
+    width: 100%;
+    min-height: 100vh;
     background: var(--gradient-color);
     color: var(--white-color);
     font-family: var(--fontOne);
@@ -190,9 +193,8 @@ img {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: auto;
-    gap: 4rem;
-    overflow: hidden;
+    grid-auto-rows: minmax(100px, auto);
+    gap: 2rem;
     scroll-behavior: smooth;
     overflow-y: hidden;
 }
@@ -288,7 +290,6 @@ img {
 }
 
 .mobile_display .nav_link:hover, .mobile_display .nav_link:focus{
-    color: var(--purple-color);
     text-decoration: underline;
 }
 
@@ -302,11 +303,9 @@ img {
     font-size: var(--font-fourteen);
     justify-content: space-between;
     width: 45%;
+    cursor: pointer;
 }
 
-.social_link:hover{
-    color: var(--purple-color);
-}
 
 .copyright_white p{
     font-size: var(--font-twelve);
@@ -345,7 +344,7 @@ img {
     }
 
     .desktop_display .nav_link:hover, .desktop_display .nav_link:focus{
-        color: var(--purple-color);
+        text-decoration: underline;
     }
 
     .nav_right{
@@ -363,7 +362,6 @@ img {
 /*========================================*/
 .hero_section{
     height: 100%;
-    margin-bottom: 0 0 2rem;
 }
 
 .flex_container{
@@ -371,21 +369,16 @@ img {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-top: 2rem;
 }
 
 .flex_left{
     background: url(assets/Top-Pattern.svg);
+    width: 90%;
 }
 
 .flex_text{
     margin: 2rem;
 }
-
-.flex_left {
-    width: 90%;
-} 
-
 
 .flex_left h2, .flex_left h4{
     font-family: var(--fontOne);
@@ -425,8 +418,13 @@ img {
     .flex_left{
         width: 55%;
         height: 100%;
-        padding: 5rem 2rem 2rem;
-        padding-left: 10rem;
+        padding: 5rem 2rem 2rem; 
+    }
+
+    .flex_text{
+        width: 380px;
+        float: right;
+
     }
 
     .flex_right{
@@ -438,39 +436,49 @@ img {
     }
 }
 
+@media screen and (min-width: 1980px) {
+    .flex_text{
+        width: 500px;
+    }
+}
+
 /*========================================*/
 /*--------------- [Pricing] -------------*/
 /*========================================*/
-.pricing_section{
-    margin: 3rem 0;
-}
-
 .pricing_wrapper{
     background: url(assets/Pricing-Pattern.svg);
     background-size: cover;
+    background-position: center;
     text-align: center;
-    padding: 4rem 2rem;
-    overflow: hidden;
 }
 
 .pricing_container{
+    padding: 2rem 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
 .pricing_card{
-    padding: 1.5rem 2rem;
+    padding: 1.5rem 1rem;
     background: var(--black-color);
     margin: 1rem;
-    width: 350px;
+    width: 300px;
     text-align: center;
-    box-shadow: 5px -5px 5px rgba(109, 109, 109, 0.178);
+    box-shadow: -2px 3px 11px -2px rgba(74,74,74,0.75);
+    -webkit-box-shadow: -2px 3px 11px -2px rgba(74,74,74,0.75);
+    -moz-box-shadow: -2px 3px 11px -2px rgba(74,74,74,0.75);
 }
 
 .pricing_card .btn{
-    width: 100%;
+    width: 80%;
+}
+
+@media screen and (min-width: 768px) {
+    .pricing_section {
+        margin: 0 4rem;
+    }
 }
 
 /*========================================*/
@@ -489,9 +497,13 @@ img {
 
 .about_right{
     background: url(assets/About-Us-Pattern.svg);
-    object-fit: cover;
-    padding: 2rem;
+    background-size: cover;
     height: min-content;
+    width: 96%;
+}
+
+.about_text{
+    margin: 2rem;
 }
 
 .about_left{
@@ -508,7 +520,9 @@ img {
     background: var(--black-color);
     padding: 1rem;
     margin: 1rem;
-    box-shadow: 5px -5px 5px rgba(88, 88, 88, 0.075);
+    box-shadow: -5px 3px 24px -3px rgba(79,78,78,0.62);
+    -webkit-box-shadow: -5px 3px 24px -3px rgba(79,78,78,0.62);
+    -moz-box-shadow: -5px 3px 24px -3px rgba(79,78,78,0.62);
 }
 
 .about_card h3{
@@ -530,6 +544,15 @@ img {
         display: flex;
         flex-wrap: wrap;
         padding: 0%;
+    }
+
+    .about_right{
+        padding: 4rem 6rem 4rem 0;
+        margin: 0 auto;
+    }
+
+    .about_text{
+        width: auto;
     }
 
     .about_card {
@@ -611,10 +634,6 @@ img {
 /*========================================*/
 /*--------[Login and Register Section]-------*/
 /*=======================================*/
-/* .full_height{
-    height: 100%;
-} */
-
 .flex_login{
     display: flex;
     flex-wrap: wrap;
@@ -622,6 +641,7 @@ img {
     align-items: center;
     width: 100%;
     padding: 1rem;
+    height: 100vh;
 }
 
 .registration{
@@ -631,11 +651,13 @@ img {
     height: 500px;
     width: 320px;
     background: var(--black-color);
-    /* margin: 2rem auto; */
     padding: 2rem;
     border: 3px solid ;
     border-radius: 10px;
-    margin: 5rem auto;
+    margin: 0 auto;
+    box-shadow: -5px 3px 24px 0px rgba(100, 99, 99, 0.5);
+    -webkit-box-shadow: -5px 3px 24px 0px rgba(100, 99, 99, 0.5);
+    -moz-box-shadow: -5px 3px 24px 0px rgba(100, 99, 99, 0.5);
 }
 
 /*--------------- [Login Section] -------------*/
@@ -671,12 +693,12 @@ img {
 }
 
 form{
- display: flex;
- width: 100%;
- flex-direction: column;
- margin: 0 auto;
- justify-content: center;
- align-items: center;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
 }
 
 .login_input{
@@ -711,6 +733,9 @@ form{
     margin-top: 1rem;
 }
 
+.login_img{
+    display: none;
+}
 
 @media screen and (min-width: 768px) {
     #login_section .btn, #register_section .btn{
@@ -722,6 +747,7 @@ form{
     }
 
     .login_img{
+        display: block;
         width: 45%;
     }
 }
@@ -795,7 +821,7 @@ form{
 .reset_section{
     height: 350px;
     width: 320px;
-    margin: 5rem auto;
+    margin: 0 auto;
 }
 
 .tab_head{
