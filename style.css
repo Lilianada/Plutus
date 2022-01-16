@@ -13,6 +13,7 @@
     --black-color: #111111;
     --purple-color: #A566EB;
     --gradient-color: linear-gradient(to right top, #111111, #181818, #1f1f1f, #262626, #2d2d2d);
+    --gradient-two-color: linear-gradient(to top, #111111, #131313, #1f1f1f, #202020, #2d2d2d);
     --blue-color: #5eb2ef;
     --skyBlue-color: #0088CC;
     --darkBlue-color: #45629F;
@@ -201,16 +202,16 @@ img {
 /*========================================*/
 /*--------------- [_Header] -------------*/
 /*========================================*/
-.navigation{
-    height: 6rem;
+/* .navigation{
+    height: 4rem;
     width: 100%;
-}
+} */
 
 
 .nav_header{
     display: flex;
-    background: var(--black-color);
-    padding: 1rem 2rem;
+    background-image: var(--gradient-two-color);
+    padding: 0.75rem 2rem;
     align-items: center;
     justify-content: space-evenly;
     z-index: 3;
@@ -641,7 +642,6 @@ img {
     align-items: center;
     width: 100%;
     padding: 1rem;
-    height: 100vh;
 }
 
 .registration{
@@ -746,6 +746,12 @@ form{
         width: 650px;
     }
 
+    .flex_login{
+        height: 75vh;
+    }
+}
+
+@media screen and (min-width: 900px) {
     .login_img{
         display: block;
         width: 45%;
