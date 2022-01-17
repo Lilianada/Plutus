@@ -833,7 +833,7 @@ form{
 /*--------------- [Reset Section] -------------*/
 /*========================================*/
 .reset_section{
-    height: 320px;
+    height: 350px;
     width: 320px;
     margin: 0 auto;
 }
@@ -890,7 +890,7 @@ form{
 /*--------------- [New Password Section] -------------*/
 /*========================================*/
 .newpass_section{
-    height: 380px;
+    height: 400px;
     width: 320px;
     margin: 0 auto;
 }
@@ -907,7 +907,7 @@ form{
 /*--------------- [Passcode Section] -------------*/
 /*========================================*/
 .passcode_section{
-    height: 350px;
+    height: 400px;
     width: 320px;
     margin: 0 auto;
 }
