@@ -645,6 +645,13 @@ img {
     height: 100%;
 }
 
+.flex_reset{
+    display: flex;
+    height: 75vh;
+    width: 100%;
+    padding: 0 1rem;
+}
+
 .registration{
     display: flex;
     flex-direction: column;
@@ -826,7 +833,7 @@ form{
 /*--------------- [Reset Section] -------------*/
 /*========================================*/
 .reset_section{
-    height: 350px;
+    height: 320px;
     width: 320px;
     margin: 0 auto;
 }
@@ -883,7 +890,7 @@ form{
 /*--------------- [New Password Section] -------------*/
 /*========================================*/
 .newpass_section{
-    height: 400px;
+    height: 380px;
     width: 320px;
     margin: 0 auto;
 }
@@ -900,7 +907,7 @@ form{
 /*--------------- [Passcode Section] -------------*/
 /*========================================*/
 .passcode_section{
-    height: 400px;
+    height: 350px;
     width: 320px;
     margin: 0 auto;
 }
