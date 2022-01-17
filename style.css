@@ -642,7 +642,7 @@ img {
     align-items: center;
     width: 100%;
     padding: 0 1rem;
-    height: 100vh;
+    height: 100%;
 }
 
 .registration{
@@ -655,7 +655,7 @@ img {
     padding: 2rem;
     border: 3px solid ;
     border-radius: 10px;
-    margin: 0 auto;
+    margin: 4rem auto;
     box-shadow: -5px 3px 24px 0px rgba(100, 99, 99, 0.5);
     -webkit-box-shadow: -5px 3px 24px 0px rgba(100, 99, 99, 0.5);
     -moz-box-shadow: -5px 3px 24px 0px rgba(100, 99, 99, 0.5);
@@ -747,9 +747,9 @@ form{
         width: 650px;
     }
 
-    .flex_login{
+    /* .flex_login{
         height: 100vh;
-    }
+    } */
 }
 
 @media screen and (min-width: 1440px) {
