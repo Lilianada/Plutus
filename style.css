@@ -641,7 +641,8 @@ img {
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 1rem;
+    padding: 0 1rem;
+    height: 100vh;
 }
 
 .registration{
@@ -747,11 +748,11 @@ form{
     }
 
     .flex_login{
-        height: 75vh;
+        height: 100vh;
     }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1440px) {
     .login_img{
         display: block;
         width: 45%;
