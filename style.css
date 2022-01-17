@@ -647,6 +647,8 @@ img {
 
 .flex_reset{
     display: flex;
+    justify-content: center;
+    align-items: center;
     height: 75vh;
     width: 100%;
     padding: 0 1rem;
