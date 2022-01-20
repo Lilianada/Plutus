@@ -191,7 +191,7 @@ img {
     display: grid;
     grid-template-columns: 100%;
     grid-auto-rows: minmax(100px, auto);
-    gap: 2rem;
+    /* gap: 2rem; */
     scroll-behavior: smooth;
     overflow-y: hidden;
 }
@@ -763,8 +763,8 @@ form{
         width: 45%;
     }
 
-    .flex_login{
-        height: 75vh;
+    .flex_login, .flex_reset{
+        height: 80vh;
     }
 
     .registration{
