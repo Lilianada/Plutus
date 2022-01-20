@@ -14,10 +14,6 @@
     --purple-color: #A566EB;
     --gradient-color: linear-gradient(to right top, #111111, #181818, #1f1f1f, #262626, #2d2d2d);
     --gradient-two-color: linear-gradient(to top, #111111, #131313, #1f1f1f, #202020, #2d2d2d);
-    --blue-color: #5eb2ef;
-    --skyBlue-color: #0088CC;
-    --darkBlue-color: #45629F;
-    --green-color: #075E54;
 
     /* FontStyle*/
     --fontOne: 'Roboto Mono', monospace;
@@ -649,7 +645,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 75vh;
+    height: 100vh;
     width: 100%;
     padding: 0 1rem;
 }
@@ -766,6 +762,14 @@ form{
         display: block;
         width: 45%;
     }
+
+    .flex_login{
+        height: 75vh;
+    }
+
+    .registration{
+        margin: 0 auto;
+    }
 }
 
 /*========================================*/
@@ -777,6 +781,7 @@ form{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 4rem auto;
 } 
 
 .check_box{
