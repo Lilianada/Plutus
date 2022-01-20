@@ -660,7 +660,7 @@ img {
     padding: 2rem;
     border: 3px solid ;
     border-radius: 10px;
-    margin: 4rem auto;
+    margin: 0 auto 4rem;
     box-shadow: -5px 3px 24px 0px rgba(100, 99, 99, 0.5);
     -webkit-box-shadow: -5px 3px 24px 0px rgba(100, 99, 99, 0.5);
     -moz-box-shadow: -5px 3px 24px 0px rgba(100, 99, 99, 0.5);
