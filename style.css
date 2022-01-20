@@ -184,7 +184,7 @@ img {
 /*========================================*/
 /*--------------- [Body Wrapper] -------------*/
 .body_container{
-    max-width: 2560px;
+    /* max-width: 2560px; */
     width: 100%;
     height: 100%;
     margin: 0 auto;
@@ -752,9 +752,6 @@ form{
         width: 650px;
     }
 
-    /* .flex_login{
-        height: 100vh;
-    } */
 }
 
 @media screen and (min-width: 1440px) {
