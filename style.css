@@ -645,7 +645,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     padding: 0 1rem;
 }
@@ -778,7 +778,7 @@ form{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* margin: 0 auto 4rem; */
+    margin: 0 auto;
 } 
 
 .check_box{
@@ -839,7 +839,7 @@ form{
 .reset_section{
     height: 400px;
     width: 320px;
-    /* margin: 0 auto; */
+    margin: 0 auto;
 }
 
 .tab_head{
@@ -896,7 +896,7 @@ form{
 .newpass_section{
     height: 400px;
     width: 320px;
-    /* margin: 0 auto; */
+    margin: 0 auto;
 }
 
 
@@ -913,7 +913,7 @@ form{
 .passcode_section{
     height: 400px;
     width: 320px;
-    /* margin: 0 auto; */
+    margin: 0 auto;
 }
 
 .tabsub_head{
